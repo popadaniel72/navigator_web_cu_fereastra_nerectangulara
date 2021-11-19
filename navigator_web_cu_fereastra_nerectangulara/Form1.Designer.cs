@@ -37,7 +37,7 @@ namespace navigator_web_cu_fereastra_nerectangulara
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(21, 25);
+            this.button1.Location = new System.Drawing.Point(28, 24);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(25, 30);
             this.button1.TabIndex = 0;
@@ -52,6 +52,7 @@ namespace navigator_web_cu_fereastra_nerectangulara
             this.tb.Name = "tb";
             this.tb.Size = new System.Drawing.Size(451, 22);
             this.tb.TabIndex = 1;
+            this.tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
             // 
             // button2
             // 
@@ -88,6 +89,8 @@ namespace navigator_web_cu_fereastra_nerectangulara
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(230)))), ((int)(((byte)(29)))));
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
